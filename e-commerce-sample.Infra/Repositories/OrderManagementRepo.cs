@@ -24,19 +24,19 @@ namespace e_commerce_sample.Infra.Repositories
             return Task.CompletedTask;
         }
 
-        public Task AllOrderManagement(int? id)
+        public Task<List<OrderManagementList>> AllOrderManagement(int? id)
         {
             if (id == null || id.Value == 0)
             {
-                var obj = (from p in dBContext.CustomerOrders
-                           join q in dBContext.OrderManagements on p.Id equals q.OrderId
-                           select new
-                           {
-                               OrderId = p.Id,
-                               CustomerName = p.FirstName + p.LastName,
-                               p.Address,
-                               PaymentStatus = q.Status == true ? "OK" : "non-payment"
-                           }).ToList();
+                List<OrderManagementList> obj = (from p in dBContext.CustomerOrders
+                                                 join q in dBContext.OrderManagements on p.Id equals q.OrderId
+                                                 select new OrderManagementList
+                                                 {
+                                                    OrderId = p.Id,
+                                                    CustomerName = p.FirstName + p.LastName,
+                                                    Address = p.Address,
+                                                    PaymentStatus = q.Status == true ? "OK" : "non-payment"
+                                                }).ToList();
                 return Task.FromResult(obj);
             }
             else
@@ -50,7 +50,7 @@ namespace e_commerce_sample.Infra.Repositories
                                CustomerName = p.FirstName + p.LastName,
                                p.Address,
                                PaymentStatus = q.Status == true ? "OK" : "Non-payment"
-                           }).ToList();
+                           }).Cast<OrderManagementList>().ToList();
                 return Task.FromResult(obj);
             }
 

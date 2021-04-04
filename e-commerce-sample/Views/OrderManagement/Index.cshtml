@@ -1,4 +1,44 @@
-﻿@model e_commerce_sample.ViewModels.OrderManagementVM 
+﻿@model IEnumerable<e_commerce_sample.Core.Entity.OrderManagementList>
 @{
     ViewBag.Title = "Order Management";
 }
+
+<h2>Order Managemnet</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().OrderId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().PaymentStatus)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(item => item.FirstOrDefault().OrderId)
+            </td>
+            <td>
+                @Html.DisplayFor(item => item.FirstOrDefault().CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(item => item.FirstOrDefault().Address)
+            </td>
+            <td>
+                @Html.DisplayFor(item => item.FirstOrDefault().PaymentStatus)
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

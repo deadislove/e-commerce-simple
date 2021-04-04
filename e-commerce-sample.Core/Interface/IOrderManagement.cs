@@ -9,7 +9,7 @@ namespace e_commerce_sample.Core.Interface
 {
     public interface IOrderManagement
     {
-        Task AllOrderManagement(int? id);
+        Task<List<OrderManagementList>> AllOrderManagement(int? id);
         Task AddOrderManagementItem<T>(T t) where T : OrderManagement;
     }
 }
