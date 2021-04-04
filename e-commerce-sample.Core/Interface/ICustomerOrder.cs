@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace e_commerce_sample.Core.Interface
 {
-    public interface IProduct<T> where T : class
+    public interface ICustomerOrder<T> where T: class
     {
-        Task<T> GetProductItem(int id);
-        Task<List<T>> GetProductItems();
+        Task Add(T t);
+        Task<bool> Complete(int id,string CustomerUserName);
     }
 }

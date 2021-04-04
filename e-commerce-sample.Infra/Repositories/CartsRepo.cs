@@ -53,7 +53,18 @@ namespace e_commerce_sample.Infra.Repositories
         {            
             var obj = dBContext.Carts
                 .Where(cart => cart.CartId == ShoppingCartId).ToList();
-            return Task.Run(() => obj as List<T>);
+            List<Cart> Result = obj;
+            
+            foreach (var item in Result)
+            {
+                if (item.Product == null)
+                {
+                    var ProductObj = dBContext.Products.Where(p => p.Id.Equals(item.ProductId)).FirstOrDefault();
+                    item.Product = ProductObj;
+                }
+                    
+            }
+            return Task.Run(() => Result as List<T>);
         }
 
         public Task EmptyCart(string ShoppingCartId) 

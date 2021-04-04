@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace e_commerce_sample.Core.Interface
 {
-    public interface IProduct<T> where T : class
+    public interface IOrderManagement
     {
-        Task<T> GetProductItem(int id);
-        Task<List<T>> GetProductItems();
     }
 }

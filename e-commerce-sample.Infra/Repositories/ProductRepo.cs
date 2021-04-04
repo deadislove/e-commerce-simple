@@ -1,4 +1,5 @@
 ﻿using e_commerce_sample.Core.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,13 @@ namespace e_commerce_sample.Infra.Repositories
                 return null;
             var obj = dBContext.Products.Single(product => product.Id.Equals(id));
             return Task.FromResult(obj as T);
+        }
+
+        public Task<List<T>> GetProductItems()
+        {
+            List<T> ResultList = dBContext.Products.Include(p=>p.Category).ToList() as List<T>;
+
+            return Task.FromResult(ResultList);
         }
     }
 }

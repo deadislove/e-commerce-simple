@@ -19,7 +19,8 @@ namespace e_commerce_sample.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var Products = iProduct.GetProductItems();
+            return View(Products);
         }
 
         public IActionResult Details(int? id)

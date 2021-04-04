@@ -35,7 +35,7 @@ else
         {
             <tr id="@item.ProductId">
                 <td>
-                    @Html.ActionLink(item.Product.Name, "Details", "Products", new { id = item.ProductId }, null)
+                    @Html.ActionLink(item.Product.Name, "Details", "Product", new { id = item.ProductId }, null)
                 </td>
                 <td>
                     @item.Product.Price

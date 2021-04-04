@@ -90,3 +90,6 @@ C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commer
 C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\Product\Details.cshtml.g.cs
 C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\Checkout\AddressAndPayment.cshtml.g.cs
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample\obj\Debug\net5.0\Razor\Views\Checkout\Complete.cshtml.g.cs

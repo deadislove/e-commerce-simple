@@ -47,6 +47,8 @@ namespace e_commerce_sample
             services.AddScoped(typeof(ICategory<>),typeof(CategoryRepo<>));
             services.AddScoped(typeof(ICarts<>), typeof(CartsRepo<>));
             services.AddScoped(typeof(IProduct<>), typeof(ProductRepo<>));
+            services.AddScoped(typeof(IOrder), typeof(OrderRepo));
+            services.AddScoped(typeof(ICustomerOrder<>), typeof(CustomerOrderRepo<>));
 
             services.AddControllersWithViews();
         }
