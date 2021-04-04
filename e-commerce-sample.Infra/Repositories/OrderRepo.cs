@@ -39,6 +39,7 @@ namespace e_commerce_sample.Infra.Repositories
             }
 
             t1.Amount = orderTotal;
+            dBContext.Entry(t1).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
 
             dBContext.SaveChanges();
 

@@ -28,6 +28,8 @@ namespace e_commerce_sample.Infra.DBContext
 
         public DbSet<RegisterModel> Users { get; set; }
 
+        public DbSet<OrderManagement> OrderManagements { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //Configure default schema
@@ -42,10 +44,12 @@ namespace e_commerce_sample.Infra.DBContext
             modelBuilder.Entity<Cart>().ToTable("Carts", "dbo");
             //Add
             modelBuilder.Entity<RegisterModel>().ToTable("Users", "dbo");
+            modelBuilder.Entity<OrderManagement>().ToTable("OrderManagements", "dbo");
 
             modelBuilder.Entity<OrderedProduct>().HasKey(key => new {key.ProductId,key.CustomerOrderId });
             modelBuilder.Entity<CustomerOrder>().Property(p => p.Amount).HasColumnType("decimal(5, 2)");
             modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType("decimal(5,2)");
+            modelBuilder.Entity<OrderManagement>().Property(p => p.Status).HasDefaultValue(false);
         }
     }
 }

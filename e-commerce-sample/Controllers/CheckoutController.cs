@@ -14,16 +14,19 @@ namespace e_commerce_sample.Controllers
     {
         private readonly ICustomerOrder<CustomerOrder> iCustomerOrder;
         private readonly IOrder iOrder;
+        private readonly IOrderManagement iOrderManagement;
 
         const string PromoCode = "FREE";
 
         public CheckoutController(
             ICustomerOrder<CustomerOrder> _iCustomerOrder,
-            IOrder _iOrder
+            IOrder _iOrder,
+            IOrderManagement _iOrderManagement
             )
         {
             this.iCustomerOrder = _iCustomerOrder;
             this.iOrder = _iOrder;
+            this.iOrderManagement = _iOrderManagement;
         }
 
         public IActionResult Index()
@@ -55,6 +58,14 @@ namespace e_commerce_sample.Controllers
 
                     var Cart = ShoppingCart.GetCart(this.HttpContext);
                     iOrder.CreateOrder<CustomerOrder>(Order, Cart.ShoppingCartId);
+
+                    var OrderManagmentItem = new OrderManagement
+                    {
+                        OrderId = Order.Id,
+                        Status = false
+                    };
+
+                    iOrderManagement.AddOrderManagementItem<OrderManagement>(OrderManagmentItem);
 
                     return RedirectToAction("Complete", new { id = Order.Id });
                 }
