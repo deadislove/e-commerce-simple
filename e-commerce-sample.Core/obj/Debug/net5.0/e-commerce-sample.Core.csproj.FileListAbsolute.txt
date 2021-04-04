@@ -1,0 +1,12 @@
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\bin\Debug\net5.0\e-commerce-sample.Core.deps.json
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\bin\Debug\net5.0\e-commerce-sample.Core.dll
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\bin\Debug\net5.0\ref\e-commerce-sample.Core.dll
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\bin\Debug\net5.0\e-commerce-sample.Core.pdb
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.csprojAssemblyReference.cache
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.AssemblyInfoInputs.cache
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.AssemblyInfo.cs
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.csproj.CoreCompileInputs.cache
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.dll
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\ref\e-commerce-sample.Core.dll
+C:\Users\DavidLin\Documents\Projects_VisualStudio2019\e-commerce-sample\e-commerce-sample.Core\obj\Debug\net5.0\e-commerce-sample.Core.pdb

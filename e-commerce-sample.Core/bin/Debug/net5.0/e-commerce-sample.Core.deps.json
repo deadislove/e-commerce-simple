@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "e-commerce-sample.Core/1.0.0": {
+        "runtime": {
+          "e-commerce-sample.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "e-commerce-sample.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
