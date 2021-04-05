@@ -9,16 +9,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().OrderId)
+                @Html.DisplayNameFor(model => model.OrderId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().CustomerName)
+                @Html.DisplayNameFor(model => model.CustomerName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().Address)
+                @Html.DisplayNameFor(model => model.Address)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FirstOrDefault().PaymentStatus)
+                @Html.DisplayNameFor(model => model.PaymentStatus)
             </th>
         </tr>
     </thead>
@@ -27,16 +27,16 @@
         {
         <tr>
             <td>
-                @Html.DisplayFor(item => item.FirstOrDefault().OrderId)
+                @Html.DisplayFor(modelItem => item.OrderId)
             </td>
             <td>
-                @Html.DisplayFor(item => item.FirstOrDefault().CustomerName)
+                @Html.DisplayFor(modelItem => item.CustomerName)
             </td>
             <td>
-                @Html.DisplayFor(item => item.FirstOrDefault().Address)
+                @Html.DisplayFor(modelItem => item.Address)
             </td>
             <td>
-                @Html.DisplayFor(item => item.FirstOrDefault().PaymentStatus)
+                @Html.DisplayFor(modelItem => item.PaymentStatus)
             </td>
         </tr>
         }
