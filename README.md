@@ -13,12 +13,20 @@
 ## Screenshot
 ### Login page
 
+![image](https://user-images.githubusercontent.com/25798404/113574613-0a0ae100-964f-11eb-9d6e-3d09d741d53b.png)
+
+![image](https://user-images.githubusercontent.com/25798404/113574640-168f3980-964f-11eb-94af-ef066e2d2d36.png)
+
 ### Shopping cart
 
-Step 1
 
-Step 2
-
-Step 3
+![image](https://user-images.githubusercontent.com/25798404/113574761-4fc7a980-964f-11eb-9d09-b9cb5aaefe1a.png)
+![image](https://user-images.githubusercontent.com/25798404/113574735-463e4180-964f-11eb-9ab2-8840bb55432e.png)
+![image](https://user-images.githubusercontent.com/25798404/113574784-5eae5c00-964f-11eb-8746-2971fb3fb98e.png)
+![image](https://user-images.githubusercontent.com/25798404/113574810-6cfc7800-964f-11eb-8f2f-18a5ca6098d7.png)
+![image](https://user-images.githubusercontent.com/25798404/113574847-7e458480-964f-11eb-9817-fef2090dee5f.png)
 
 ### Order management
+
+![image](https://user-images.githubusercontent.com/25798404/113574704-3888bc00-964f-11eb-8703-6c7bf9c192cf.png)
+
