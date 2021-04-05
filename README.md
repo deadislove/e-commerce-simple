@@ -28,5 +28,5 @@
 
 ### Order management
 
-![image](https://user-images.githubusercontent.com/25798404/113574704-3888bc00-964f-11eb-8703-6c7bf9c192cf.png)
+![image](https://user-images.githubusercontent.com/25798404/113580029-ae912100-9657-11eb-9f50-7d3829555881.png)
 
